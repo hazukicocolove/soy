@@ -1,3 +1,465 @@
-*{
-font-family: 'Zen Old Mincho', serif;
+* {
+    font-family: 'Zen Old Mincho', serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: #707070;
+    list-style: none;
+    text-align: center;
+    align-items: center;
 }
+
+img {
+    height: 300px;
+}
+
+ul {
+    text-align: right;
+}
+
+li {
+    display: block;
+    text-align: right;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /*一応BOX内の文字も中央寄せ*/
+
+}
+
+.header{
+    position: relative;
+}
+
+.headimg {
+    width: cover;
+    height: auto;
+    z-index: 0;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    /* 全画面表示 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(images/アートボード4.png)
+}
+
+.toumei{
+    opacity: 0.8;
+}
+
+
+/* チェックボックスは非表示に */
+.drawer-hidden {
+    display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer-open {
+    display: flex;
+    right: 0;
+    height: 360px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    /* 重なり順を一番上に */
+    cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer-open span,
+.drawer-open span:before,
+.drawer-open span:after {
+    content: 'menu';
+    display: block;
+    height: 100px;
+    width: 50px;
+    border-radius: 3px;
+    background: #fff;
+    transition: 0.5s;
+    position: absolute;
+    color: #C6B7A9;
+}
+
+
+
+
+/* メニューのデザイン*/
+.drawer-content {
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    /* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #fff;
+    opacity: 70%;
+    transition: .5s;
+}
+
+.drawer-item{
+    text-align: center;
+    align-items: center;
+}
+
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer-check:checked~.drawer-content {
+    left: 70%;
+    /* メニューを画面に入れる */
+}
+
+
+.toha {
+    position: relative;
+    background-color: #EAE8DD;
+    padding-bottom: 200px;
+    height: 140vh;
+}
+
+.tohatext {
+    position: absolute;
+    top: 390px;
+    left: 700px;
+    padding: 40px;
+    background-color: #fff;
+    z-index: 0;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70vh;
+}
+
+.tohatext h2 {
+    padding-bottom: 28px;
+}
+
+.tohaimg {
+    position: absolute;
+    top: 160px;
+    left: 220px;
+    z-index: 1;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70vh;
+
+}
+
+.kouka {
+    background-color: #EAE8DD;
+    align-items: center;
+    text-align: center;
+}
+
+.kouka h2 {
+    text-align: left;
+    padding-left: 80px;
+    padding-bottom: 80px;
+    font-size: 40px;
+
+}
+
+.koukatitle{
+    font-size: 20px;
+}
+
+.koukalist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.koukacon {
+    position: relative;
+    width: 44vh;
+    height: auto;
+    /* padding: 40px; */
+    margin: 80px 20px;
+    align-items: center;
+
+}
+
+.koukamain {
+    line-height: 1.5em;
+    padding: 20px;
+    margin: 0px 40px;
+    font-size: 14px;
+}
+
+
+
+.koukapic {
+    position: relative;
+    top: 0;
+    /* 上からの位置指定 */
+    bottom: 0;
+    /* 下からの位置指定 */
+    left: 0;
+    /* 左からの位置指定 */
+    right: 0;
+    /* 右からの位置指定 */
+    margin: auto auto auto -112px;
+    z-index: 0;
+    width: 540px;
+    height: auto;
+    align-items: center;
+    position: absolute;
+    z-index: 0;
+    text-align: center;
+
+}
+
+
+
+
+.koukaitx {
+    /* background-image: url(images/list1.png);
+    background-repeat: no-repeat;
+    background-size: 72vh;
+    background-position: center center; */
+    z-index: 1;
+    position: relative;
+}
+
+.nominikui {
+    position: relative;
+    background-color: #EAE8DD;
+    padding-bottom: 200px;
+    height: 160vh;
+    display: flex;
+    align-items: center;
+}
+
+.nominikuitext {
+    position: absolute;
+    top: 320px;
+    left: 180px;
+    padding: 40px;
+    background-color: #fff;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70vh;
+
+}
+
+.nominikuitext h2{
+    padding-bottom: 20px;
+}
+
+.nominikuipic {
+    position: absolute;
+    top: -360px;
+    left: 700px;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 220px;
+}
+
+img.img1 {
+    width: 260px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    z-index: 0;
+}
+
+img.img2 {
+    width: 260px;
+    height: auto;
+    position: absolute;
+    top: 200px;
+    left: 248px;
+    z-index: 1;
+}
+
+
+img.img3 {
+    width: 260px;
+    height: auto;
+    position: absolute;
+    top: 440px;
+    left: 160px;
+    z-index: 0;
+
+}
+
+.nomipic {
+    position: relative;
+}
+
+
+
+.soylist {
+    background-color: #C6B7A9;
+}
+
+.soylist h2 {
+    text-align: left;
+    padding-left: 80px;
+    padding-top: 80px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.soy {
+    padding: 32px 20px;
+    margin: 60px;
+    background-color: #fff;
+}
+
+.manysoy {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.soy img{
+    height: 300px;
+}
+
+.soy p{
+    font-size: 25px;
+}
+
+
+/* PC用のCSSはメディアクエリの外に記述する */
+
+@media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット用） */
+}
+
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+
+
+    .headimg{
+        background-image: url(images/アートボード4のコピー.png);
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    .drawer-open{
+        left: 80%;
+    }
+    
+    .toha{
+        height: 90vh;
+    }
+
+    .tohaimg {
+        left: 33px;
+        width: 35vh;
+        height: auto;
+    }
+
+    .tohatext h2{
+        padding-bottom: 12px;
+        font-size: 16ox;
+        padding-top: 20px;
+    }
+
+    .tohatext {
+        font-size: 16px;
+        width: 35vh;
+        left: 64px;
+        top: 280px;
+        font-size: 8px;
+        padding: 20px;
+        padding-bottom: 20px;
+    }
+
+    .kouka h2 {
+        text-align: left;
+        padding-left: 32px;
+        padding-bottom: 32px;
+        font-size: 28px;
+    }
+
+    .koukacon{
+        left: 5%;
+        margin: 105px 20px;
+    }
+    
+
+    .nominikui{
+        padding-bottom: 0px;
+        height: 138vh;
+    }
+
+   
+    .nominikuipic{
+        left: -70px;
+    }
+
+    .nominikuitext{
+        font-size: 8px;
+        z-index: 5;
+        top: 478px;
+        left: 100px;
+        padding: 24px;
+        width: 32vh;
+    }
+
+    img.img2{
+        width: 174px; ;
+        top: 230px;
+    }
+
+    img.img3{
+        left: 120px;
+    }
+
+    .soy img{
+        height:132px ;   
+    }
+
+    .soy {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+
+    .soy p{
+        font-size: 8px;
+    }
+    
+    .drawer-content {
+        width: 70%;
+    }
+    /* アイコンがクリックされたらメニューを表示 */
+    #drawer-check:checked~.drawer-content {
+        left: 30%;
+        /* メニューを画面に入れる */
+    }
+    

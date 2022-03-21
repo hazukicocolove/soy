@@ -10,202 +10,282 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>hazukitmr</title>
 </head>
 
 <body>
 
-    <section class="header">
-        <nav>
-            <ul>
-                <li> <a href="#top">トップ</a> </li>
-                <li> <a href="#what">豆乳とは</a> </li>
-                <li> <a href="#kouka">豆乳の効果</a> </li>
-                <li> <a href="#shohin">商品一覧</a> </li>
-            </ul>
-        </nav>
-        <div class="title">
-            <img src="images/fried-bread-stick-6902988_1280.jpeg" alt="" 　class="titleimg">
-            <h1>豆乳のすゝめ</h1>
+    <section class="header" id="top">
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="drawer">
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input type="checkbox" id="drawer-check" class="drawer-hidden">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer-check" class="drawer-open"> menu</menu><span></span></label>
+
+                <!-- メニュー -->
+                <nav class="drawer-content">
+                    <ul class="drawer-list">
+                        <li class="drawer-item">
+                            <a href="#top">トップ</a>
+                        </li><!-- /.drawer-item -->
+                        <li class="drawer-item">
+                            <a href="#what">豆乳とは</a>
+                        </li><!-- /.drawer-item -->
+                        <li class="drawer-item">
+                            <a href="#kouka">豆乳の効果</a>
+                        <li class="drawer-item">
+                            <a href="#nominiku">豆乳は飲みにくい？</a>
+                        <li class="drawer-item">
+                            <a href="#shohin">商品一覧</a>
+                        </li><!-- /.drawer-item -->
+                    </ul><!-- /.drawer-list -->
+                </nav>
+            </div>
+            <div class="title">
+                <h1>豆乳のすゝめ</h1>
+            </div>
+            <div class="toumei">
+                <div class="headimg"></div>
+            </div>
+    </section>
+
+    <section class="toha" id="what">
+        <div class="tohatext">
+            <h2>豆乳って？</h2>
+            <p>豆乳とは、大豆から熱水等によりたんぱく質やその他の成分を溶出させ、繊維質を除去して得られた乳状の飲料で、大豆固形分が8%以上のものです。<br>
+                つまり豆乳とは、「大豆を水に浸してすりつぶし、水を加えて煮詰めた汁を濾した液状の飲み物」のことです。<br>
+                ちなみに、この豆乳に凝固剤（にがり）を入れて固めると「豆腐」になります。
+            </p>
         </div>
+        <img src="images/main_img.png" alt="" class="tohaimg">
     </section>
 
-    <section class="toha">
-        <h2>豆乳って？</h2>
-        <p>豆乳とは、大豆から熱水等によりたんぱく質やその他の成分を溶出させ、繊維質を除去して得られた乳状の飲料で、大豆固形分が8%以上のものです。<br>
-            つまり豆乳とは、「大豆を水に浸してすりつぶし、水を加えて煮詰めた汁を濾した液状の飲み物」のことです。<br>
-            ちなみに、この豆乳に凝固剤（にがり）を入れて固めると「豆腐」になります。
-        </p>
-        <img src="images/main_img.png" alt="" 　class="tohaimg">
-    </section>
-
-    <section class="kouka">
+    <section class="kouka" id="kouka">
         <h2>豆乳の6つの効果</h2>
-        <div class="kouka1">
-            <p>ダイエット</p>
-            <p>豆乳には血液中の余分な脂質を流してくれるサポニンが含まれているため肥満防止の効果があります。
-                また、痩せやすい体を作るたんぱく質も豊富です。動物性のたんぱく質に比べ、低カロリーで基礎代謝を高くするはたらきがありますにより体内の不むくみを取る働きが期待できます。
-            </p>
-        </div>
-        <div class="kouka2">
-            <p>便秘対策</p>
-            <p>豆乳には乳酸菌のエサとなるオリゴ糖が含まれていて、ビフィズス菌や乳酸菌の栄養源となり腸内の乳酸菌や善玉菌を増やすはたらきがあります。菌が増えると腸壁が刺激され、腸内環境が整うことで便秘が解消されます。
-            </p>
-        </div>
-        <div class="kouka3">
-            <p>アンチエイジング</p>
-            <p>サポニンはダイエットのサポートになるだけでなく、抗酸化作用のはたらきもあります。動脈硬化や体の酸化、つまり老化を予防してくれるのです。また、ビタミンEの抗酸化作用で肌や髪のハリやツヤを保ってくれます。肌や髪のアンチエイジング効果があります。
-            </p>
-        </div>
-        <div class="kouka4">
-            <p>女性ホルモンの支え</p>
-            <p>イソフラボンやさまざまな栄養素によって育毛環境を整えてくれる働きがあります。また、サポニンは血流の流れを改善し髪へ栄養が行き渡りやすくする働きがあります。さらにビタミンEに抗酸化作用があり、肌や髪のハリやツヤを保ってくれると言割れています。
-            </p>
-        </div>
-        <div class="kouka5">
-            <p>美肌</p>
-            <p>豆乳には肌の健康を保つためのビタミンB1、B2、B6がたっぷり含まれています。また、レシチンには細胞の働きを正常に保ち新陳代謝を活発にさせ、肌のターンオーバーを正常にする作用があります。さらに、サポニンで肌の老化の原因の活性酸素を抑えて紫外線や乾燥など様々なダメージからお肌を守り、シミやそばかすの予防が
-                できます。
-            </p>
-        </div>
-        <div class="kouka6">
-            <p>抜け毛予防</p>
-            <p>イソフラボンやさまざまな栄養素によって育毛環境を整えてくれる働きがあります。また、サポニンは血流の流れを改善し髪へ栄養が行き渡りやすくする働きがあります。さらにビタミンEに抗酸化作用があり、肌や髪のハリやツヤを保ってくれると言割れています。
-            </p>
+        <div class="koukalist">
+            <div class="koukacon kouka1">
+                <div class="koukaitx">
+                    <p class="koukatitle">ダイエット</p>
+                    <p class="koukamain">豆乳には血液中の余分な脂質を流してくれるサポニンが含まれているため肥満防止の効果があります。
+                        また、痩せやすい体を作るたんぱく質も豊富です。動物性のたんぱく質に比べ、低カロリーで基礎代謝を高くするはたらきがありますにより体内の不むくみを取る働きが期待できます。
+                    </p>
+                </div>
+                <img src="images/list1.png" class="koukapic" alt="">
+            </div>
+
+
+            <div class="koukacon kouka2">
+                <div class="koukaitx">
+                    <p class="koukatitle">便秘対策</p>
+                    <p class="koukamain">
+                        豆乳には乳酸菌のエサとなるオリゴ糖が含まれていて、ビフィズス菌や乳酸菌の栄養源となり腸内の乳酸菌や善玉菌を増やすはたらきがあります。菌が増えると腸壁が刺激され、腸内環境が整うことで便秘が解消されます。
+                    </p>
+                </div>
+                <img src="images/list2.png" class="koukapic" alt="">
+
+            </div>
+
+            <div class="koukacon">
+                <div class="koukaitx">
+                    <p class="koukatitle">アンチエイジング</p>
+                    <p class="koukamain">
+                        サポニンはダイエットのサポートになるだけでなく、抗酸化作用のはたらきもあります。動脈硬化や体の酸化、つまり老化を予防してくれるのです。また、ビタミンEの抗酸化作用で肌や髪のハリやツヤを保ってくれます。肌や髪のアンチエイジング効果があります。
+                    </p>
+                </div>
+                <img src="images/list3.png" class="koukapic" alt="">
+            </div>
+
+            <div class="koukacon">
+                <div class="koukaitx">
+                    <p class="koukatitle">女性ホルモンの支え</p>
+                    <p class="koukamain">
+                        イソフラボンやさまざまな栄養素によって育毛環境を整えてくれる働きがあります。また、サポニンは血流の流れを改善し髪へ栄養が行き渡りやすくする働きがあります。さらにビタミンEに抗酸化作用があり、肌や髪のハリやツヤを保ってくれると言割れています。
+                    </p>
+                </div>
+                <img src="images/list4.png" class="koukapic" alt="">
+
+            </div>
+
+            <div class="koukacon">
+                <div class="koukaitx">
+                    <p class="koukatitle">美肌</p>
+                    <p class="koukamain">
+                        豆乳には肌の健康を保つためのビタミンB1、B2、B6がたっぷり含まれています。また、レシチンには細胞の働きを正常に保ち新陳代謝を活発にさせ、肌のターンオーバーを正常にする作用があります。さらに、サポニンで肌の老化の原因の活性酸素を抑えて紫外線や乾燥など様々なダメージからお肌を守り、シミやそばかすの予防が
+                        できます。
+                    </p>
+                </div>
+                <img src="images/list5.png" class="koukapic" alt="">
+
+            </div>
+
+            <div class="koukacon">
+                <div class="koukaitx">
+                    <p class="koukatitle">抜け毛予防</p>
+                    <p class="koukamain">
+                        イソフラボンやさまざまな栄養素によって育毛環境を整えてくれる働きがあります。また、サポニンは血流の流れを改善し髪へ栄養が行き渡りやすくする働きがあります。さらにビタミンEに抗酸化作用があり、肌や髪のハリやツヤを保ってくれると言割れています。
+                    </p>
+                </div>
+                <img src="images/list6.png" class="koukapic" alt="">
+
+            </div>
         </div>
     </section>
 
-    <section class="nominikui">
+    <section class="nominikui" id="nominiku">
         <div class="nominikuitext">
             <h2>豆乳は飲みにくい？</h2>
             <p>豆腐を作る過程の、おからを取り除いたものが無調整豆乳です。大豆の風味がかなり強く、えぐみもあり、決して飲みやすくありません。しかし一方で成分無調整豆乳に調味料や香料を加えて飲みやすくした成分調製豆乳はとても美味しいのです。キッコーマンでは数々の美味しい成分調製豆乳を販売しています。是非好きな豆乳を見つけてください。
             </p>
         </div>
-        <div class="nominikuipic">
+        <div class="nominikuipic nomipic">
+
             <img src="images/soy-milk-soy-food-and-beverage-products-food-nutrition-concept.jpg" alt="" class="img1">
             <img src="images/homeshop_s8006-shu-0733.png" alt="" class="img2">
             <img src="images/22883676_l.jpg" alt="" class="img3">
         </div>
     </section>
 
-    <section class="soylist">
+    <section class="soylist" id="shohin">
         <h2>商品一覧</h2>
-        <div class="soy">
-            <img src="images/1.png" alt="">
-            <p>麦芽コーヒー</p>
-        </div>
-        <div class="soy">
-            <img src="images/2.png" alt="">
-            <p>バナナ</p>
-        </div>
-        <div class="soy">
-            <img src="images/3.png" alt="">
-            <p>抹茶</p>
-        </div>
-        <div class="soy">
-            <img src="images/4.png" alt="">
-            <p>黒ごま</p>
-        </div>
-        <div class="soy">
-            <img src="images/5.png" alt="">
-            <p>バニラアイス</p>
-        </div>
-        <div class="soy">
-            <img src="images/6.png" alt="">
-            <p>マンゴー</p>
-        </div>
-        <div class="soy">
-            <img src="images/7.png" alt="">
-            <p>紅茶</p>
-        </div>
-        <div class="soy">
-            <img src="images/8.png" alt="">
-            <p>フルーツミックス</p>
-        </div>
-        <div class="soy">
-            <img src="images/9.png" alt="">
-            <p>ココア</p>
-        </div>
-        <div class="soy">
-            <img src="images/10.png" alt="">
-            <p>アーモンド</p>
-        </div>
-        <div class="soy">
-            <img src="images/11.png" alt="">
-            <p>いちご</p>
-        </div>
-        <div class="soy">
-            <img src="images/12.png" alt="">
-            <p>メロン</p>
-        </div>
-        <div class="soy">
-            <img src="images/13.png" alt="">
-            <p>ブラックチョコ</p>
-        </div>
-        <div class="soy">
-            <img src="images/14.png" alt="">
-            <p>杏仁豆腐</p>
-        </div>
-        <div class="soy">
-            <img src="images/15.png" alt="">
-            <p>マカダミアナッツ</p>
-        </div>
-        <div class="soy">
-            <img src="images/16.png" alt="">
-            <p>チョコミント</p>
-        </div>
-        <div class="soy">
-            <img src="images/17.png" alt="">
-            <p>白桃</p>
-        </div>
-        <div class="soy">
-            <img src="images/18.png" alt="">
-            <p>焼きいも</p>
-        </div>
-        <div class="soy">
-            <img src="images/19.png" alt="">
-            <p>プリン</p>
-        </div>
-        <div class="soy">
-            <img src="images/20.png" alt="">
-            <p>ココナツマンゴー</p>
-        </div>
-        <div class="soy">
-            <img src="images/21.png" alt="">
-            <p>チーズケーキ</p>
-        </div>
-        <div class="soy">
-            <img src="images/22.png" alt="">
-            <p>はちみつ</p>
-        </div>
-        <div class="soy">
-            <img src="images/23.png" alt="">
-            <p>キャラメル</p>
-        </div>
-        <div class="soy">
-            <img src="images/24.png" alt="">
-            <p>低糖麦芽コーヒー</p>
-        </div>
-        <div class="soy">
-            <img src="images/25.png" alt="">
-            <p>チャイティー</p>
-        </div>
-        <div class="soy">
-            <img src="images/26.png" alt="">
-            <p>かぼちゃ</p>
-        </div>
-        <div class="soy">
-            <img src="images/27.png" alt="">
-            <p>オーツ</p>
-        </div>
-        <div class="soy">
-            <img src="images/28.png" alt="">
-            <p>ピスタチオ</p>
+        <div class="manysoy">
+            
+            <a href="https://www.k-tounyu.jp/lineup/1260/" target="_blank"> <div class="soy">
+                <img src="images/1.png" alt="">
+                <p>麦芽コーヒー</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/95/" target="_blank"></a><div class="soy">
+                <img src="images/2.png" alt="">
+                <p>バナナ</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/96/" target="_blank"></a><div class="soy">
+                <img src="images/3.png" alt="">
+                <p>抹茶</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/99/" target="_blank"> <div class="soy">
+                <img src="images/4.png" alt="">
+                <p>黒ごま</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/122/" target="_blank"> <div class="soy">
+                <img src="images/5.png" alt="">
+                <p>バニラアイス</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/107/" target="_blank"></a><div class="soy">
+                <img src="images/6.png" alt="">
+                <p>マンゴー</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/94/" target="_blank"> <div class="soy">
+                <img src="images/7.png" alt="">
+                <p>紅茶</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/97/" target="_blank"> <div class="soy">
+                <img src="images/8.png" alt="">
+                <p>フルーツミックス</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/98/" target="_blank"> <div class="soy">
+                <img src="images/9.png" alt="">
+                <p>ココア</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/103/" target="_blank"></a><div class="soy">
+                <img src="images/10.png" alt="">
+                <p>アーモンド</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/100/" target="_blank"></a><div class="soy">
+                <img src="images/11.png" alt="">
+                <p>いちご</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/108/" target="_blank"></a><div class="soy">
+                <img src="images/12.png" alt="">
+                <p>メロン</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/2385/" target="_blank"></a><div class="soy">
+                <img src="images/13.png" alt="">
+                <p>ブラックチョコ</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/2874/" target="_blank"></a><div class="soy">
+                <img src="images/14.png" alt="">
+                <p>杏仁豆腐</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/1256/" target="_blank"> <div class="soy">
+                <img src="images/15.png" alt="">
+                <p>マカダミアナッツ</p>
+            </div></a>
+            <a href="https://www.kikkoman.co.jp/products/product/K581599/index.html" target="_blank"> <div class="soy">
+                <img src="images/16.png" alt="">
+                <p>チョコミント</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/114/" target="_blank"> <div class="soy">
+                <img src="images/17.png" alt="">
+                <p>白桃</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/110/" target="_blank"> <div class="soy">
+                <img src="images/18.png" alt="">
+                <p>焼きいも</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/2382/" target="_blank"> <div class="soy">
+                <img src="images/19.png" alt="">
+                <p>プリン</p>
+            </div></a>
+            <a href="https://shareview.jp/item/detail/36605" target="_blank"> <div class="soy">
+                <img src="images/20.png" alt="">
+                <p>ココナツマンゴー</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/3851/" target="_blank"></a><div class="soy">
+                <img src="images/21.png" alt="">
+                <p>チーズケーキ</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/3853/" target="_blank"> <div class="soy">
+                <img src="images/22.png" alt="">
+                <p>はちみつ</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/3337/" target="_blank"> <div class="soy">
+                <img src="images/23.png" alt="">
+                <p>キャラメル</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/1260/" target="_blank"></a><div class="soy">
+                <img src="images/24.png" alt="">
+                <p>低糖麦芽コーヒー</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/4953/" target="_blank"> <div class="soy">
+                <img src="images/25.png" alt="">
+                <p>チャイティー</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/4955/" target="_blank"></a><div class="soy">
+                <img src="images/26.png" alt="">
+                <p>かぼちゃ</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/5692/" target="_blank"> <div class="soy">
+                <img src="images/27.png" alt="">
+                <p>オーツ</p>
+            </div></a>
+            <a href="https://www.k-tounyu.jp/lineup/5694/" target="_blank"> <div class="soy">
+                <img src="images/28.png" alt="">
+                <p>ピスタチオ</p>
+            </div>
         </div>
     </section>
 
     <footer>
         @HazukiTamura 2021
+    </footer>
+
+
+    <!-- //チェックボックスのチェックを外す -->
+
+    <script type="text/javascript">
+        $(function () {
+            $('.drawer-item>a').click(function () {
+                $('#drawer-check').removeAttr('checked').prop('checked', false).change();
+            });
+        });
+
+        
+    </script>
+
+    
 </body>
 
 </html>
